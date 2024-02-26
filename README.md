@@ -1,4 +1,5 @@
 Google Play'de onay sürecinde olan Zinciri Kırma Alışkanlık Takibi uygulamamın detayları. Uygulama Apksına bu linkten ulaşabilir ve indirebilirsiniz: https://drive.google.com/drive/folders/1C3AQi0N-wjNDeZ9rmSWgHPJ0pqmbpeag
+
 İşte uygulama görselleri ve kullanım şekli:
 
 <img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/cf403c50-21d2-4bd9-88fa-2b7e9b296e9a" alt="image8" width="250" height="500">
