@@ -2,3 +2,12 @@ Google Play'de onay sürecinde olan Zinciri Kırma Alışkanlık Takibi uygulama
 İşte uygulama görselleri ve kullanım şekli:
 
 <img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/bbe42e3b-e088-4ac3-9e15-d20ccfddedd9" alt="image2" width="250" height="500">
+<img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/bbe42e3b-e088-4ac3-9e15-d20ccfddedd9" alt="image2" width="250" height="500">
+<img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/bbe42e3b-e088-4ac3-9e15-d20ccfddedd9" alt="image2" width="250" height="500">
+<img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/bbe42e3b-e088-4ac3-9e15-d20ccfddedd9" alt="image2" width="250" height="500">
+<img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/bbe42e3b-e088-4ac3-9e15-d20ccfddedd9" alt="image2" width="250" height="500">
+<img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/bbe42e3b-e088-4ac3-9e15-d20ccfddedd9" alt="image2" width="250" height="500">
+<img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/bbe42e3b-e088-4ac3-9e15-d20ccfddedd9" alt="image2" width="250" height="500">
+<img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/bbe42e3b-e088-4ac3-9e15-d20ccfddedd9" alt="image2" width="250" height="500">
+<img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/bbe42e3b-e088-4ac3-9e15-d20ccfddedd9" alt="image2" width="250" height="500">
+<img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/bbe42e3b-e088-4ac3-9e15-d20ccfddedd9" alt="image2" width="250" height="500">
