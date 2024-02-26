@@ -14,7 +14,7 @@ Google Play'de onay sürecinde olan Zinciri Kırma Alışkanlık Takibi uygulama
 Bu proje içerisinde kullandığım teknolojiler:
 •Navigation
 •Fragment
-•Recycler View
+•RecyclerView
 •Sqlite
 •Adobe Xd ile UI/UX
 •ViewBinding
