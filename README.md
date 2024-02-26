@@ -15,7 +15,7 @@ Bu proje içerisinde kullandığım teknolojiler:
 •Navigation
 •Fragment
 •RecyclerView
-•Sqlite
+•SqLite
 •Adobe Xd ile UI/UX
 •ViewBinding
 •Runnable/Handler
