@@ -13,14 +13,25 @@ Google Play'de onay sürecinde olan Zinciri Kırma Alışkanlık Takibi uygulama
 <img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/bcc474b5-a219-48cd-971c-bf636de34a33" alt="image9" width="250" height="500">
 
 Bu proje içerisinde kullandığım teknolojiler:
+
 •Navigation
+
 •Fragment
+
 •RecyclerView
+
 •SqLite
+
 •Adobe Xd ile UI/UX
+
 •ViewBinding
+
 •Runnable/Handler
+
 •ViewModel
+
 •MaterialCalendarView
+
 •Decorator
+
 •WorkManager
