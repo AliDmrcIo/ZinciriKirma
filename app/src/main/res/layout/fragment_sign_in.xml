@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInFragment"
+    android:background="#252427"
+    >
+
+
+    <TextView
+        android:id="@+id/textNameAyarlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:text="Zinciri Kırma"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <ImageView
+        android:id="@+id/imageViewRectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameAyarlar"
+        app:layout_constraintVertical_bias="0.916" />
+
+    <EditText
+        android:id="@+id/editTextAdSoyad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/box"
+        android:ems="10"
+        android:fadingEdge="vertical"
+        android:hint="Ad - Soyad"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRectangle"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRectangle"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRectangle" />
+
+    <EditText
+        android:id="@+id/editTextEmailKayitOl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/box"
+        android:ems="10"
+        android:fadingEdge="vertical"
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRectangle"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdSoyad" />
+
+    <EditText
+        android:id="@+id/editTextSifreKayitOl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/box"
+        android:ems="10"
+        android:fadingEdge="vertical"
+        android:hint="Şifre"
+        android:inputType="text"
+        android:padding="5dp"
+        android:password="true"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRectangle"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailKayitOl" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="306dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#000000"
+        android:text="Çok Yakında..."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRectangle"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSifreKayitOl"
+        app:layout_constraintVertical_bias="0.308" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:clickable="true"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRectangle"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRectangle"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRectangle"
+        app:layout_constraintVertical_bias="0.024"
+        app:maxImageSize="30dp"
+        app:tint="@color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

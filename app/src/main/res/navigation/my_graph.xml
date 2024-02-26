@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.alidemirci.dontbreakthechain.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_accountAndSettingsPage"
+            app:destination="@id/accountAndSettingsPage" />
+        <argument
+            android:name="calendarInfo"
+            app:argType="long"
+            android:defaultValue="5L" />
+        <action
+            android:id="@+id/action_firstFragment_to_listPageFragment"
+            app:destination="@id/listPageFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_listPage"
+            app:destination="@id/listPage" />
+        <action
+            android:id="@+id/action_firstFragment_self"
+            app:destination="@id/firstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.alidemirci.dontbreakthechain.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_accountAndSettingsPage"
+            app:destination="@id/accountAndSettingsPage" />
+        <action
+            android:id="@+id/action_secondFragment_to_listPage"
+            app:destination="@id/listPage" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.alidemirci.dontbreakthechain.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_listPageFragment"
+            app:destination="@id/listPageFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_accountAndSettingsPage"
+            app:destination="@id/accountAndSettingsPage" />
+        <action
+            android:id="@+id/action_thirdFragment_to_listPage"
+            app:destination="@id/listPage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.alidemirci.dontbreakthechain.FourthFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/fragment_fourth" >
+        <action
+            android:id="@+id/action_fourthFragment_to_accountAndSettingsPage"
+            app:destination="@id/accountAndSettingsPage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listPageFragment"
+        android:name="com.alidemirci.dontbreakthechain.ListPageFragment"
+        android:label="fragment_list_page"
+        tools:layout="@layout/fragment_list_page" >
+        <action
+            android:id="@+id/action_listPageFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_listPageFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_listPageFragment_to_listPage"
+            app:destination="@id/listPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.alidemirci.dontbreakthechain.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_accountAndSettingsPage"
+            app:destination="@id/accountAndSettingsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountAndSettingsPage"
+        android:name="com.alidemirci.dontbreakthechain.AccountAndSettingsPage"
+        android:label="fragment_account_and_settings_page"
+        tools:layout="@layout/fragment_account_and_settings_page" >
+        <action
+            android:id="@+id/action_accountAndSettingsPage_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_accountAndSettingsPage_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_accountAndSettingsPage_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_accountAndSettingsPage_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_accountAndSettingsPage_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+        <action
+            android:id="@+id/action_accountAndSettingsPage_to_listPage"
+            app:destination="@id/listPage" />
+        <action
+            android:id="@+id/action_accountAndSettingsPage_to_donateAndRemoveAds"
+            app:destination="@id/donateAndRemoveAds" />
+    </fragment>
+    <fragment
+        android:id="@+id/listPage"
+        android:name="com.alidemirci.dontbreakthechain.ListPage"
+        android:label="fragment_list_page2"
+        tools:layout="@layout/fragment_list_page2" >
+        <action
+            android:id="@+id/action_listPage_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_listPage_to_listPageFragment"
+            app:destination="@id/listPageFragment" />
+        <action
+            android:id="@+id/action_listPage_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_listPage_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_listPage_to_accountAndSettingsPage"
+            app:destination="@id/accountAndSettingsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/donateAndRemoveAds"
+        android:name="com.alidemirci.dontbreakthechain.DonateAndRemoveAds"
+        android:label="fragment_donate_and_remove_ads"
+        tools:layout="@layout/fragment_donate_and_remove_ads" >
+        <action
+            android:id="@+id/action_donateAndRemoveAds_to_accountAndSettingsPage"
+            app:destination="@id/accountAndSettingsPage" />
+    </fragment>
+</navigation>
