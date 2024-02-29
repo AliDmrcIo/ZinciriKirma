@@ -9,21 +9,29 @@
     >
 
 
-    <TextView
-        android:id="@+id/textNameAyarlar"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/alfa_slab_one"
         android:gravity="center"
-        android:text="Zinciri Kırma"
-        android:textColor="#FFFFFF"
-        android:textSize="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewRectangle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.095" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textNameAyarlar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center"
+            android:text="Zinciri Kırma"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+
+    </RelativeLayout>
+
 
     <ImageView
         android:id="@+id/imageViewRectangle"
@@ -34,8 +42,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textNameAyarlar"
-        app:layout_constraintVertical_bias="0.916" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editTextAdSoyad"
@@ -91,6 +99,7 @@
         android:layout_height="60dp"
         android:backgroundTint="#000000"
         android:text="Çok Yakında..."
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageViewRectangle"
@@ -112,7 +121,7 @@
         app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintStart_toStartOf="@+id/imageViewRectangle"
         app:layout_constraintTop_toTopOf="@+id/imageViewRectangle"
-        app:layout_constraintVertical_bias="0.024"
+        app:layout_constraintVertical_bias="0.038"
         app:maxImageSize="30dp"
         app:tint="@color/white" />
 

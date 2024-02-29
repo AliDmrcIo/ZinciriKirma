@@ -1,6 +1,7 @@
 package com.alidemirci.dontbreakthechain;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
@@ -35,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // AppCompatDelegate kullanarak dark modu devre dışı bıraktım
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+        // Tema dosyalarını kullanın
+        setTheme(R.style.Theme_DontBreakTheChain);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);

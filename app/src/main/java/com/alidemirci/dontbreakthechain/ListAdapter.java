@@ -61,12 +61,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
                     listPageFragment.setArguments(bundle);
                     Navigation.findNavController(view).navigate(R.id.action_thirdFragment_to_listPageFragment, bundle);
 
-
-
-
                 }else{
-
-
                     a=2;
                     Bundle bundle = new Bundle();
                     bundle.putString("info","old");

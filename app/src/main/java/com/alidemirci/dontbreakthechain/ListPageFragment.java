@@ -68,6 +68,7 @@ public class ListPageFragment extends Fragment {
     private InterstitialAd mInterstitialAd;
     private static final String TAG = "FirstFragment";
     AdRequest adRequest;
+    Calendar calendar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -134,6 +135,11 @@ public class ListPageFragment extends Fragment {
         arguments = getArguments();
         System.out.println("listadapter'dan listpagefragment'a veri geldi");
 
+        calendar = Calendar.getInstance();
+        calendar.set(Calendar.HOUR_OF_DAY, 22);
+        calendar.set(Calendar.MINUTE, 0);
+        calendar.set(Calendar.SECOND, 0);
+
         if (arguments != null) {
             info = arguments.getString("info");
             id = arguments.getInt("id", 0);
@@ -152,15 +158,6 @@ public class ListPageFragment extends Fragment {
                             if(hedef.length()<=25){
                                 save(view);
                                 Toast.makeText(getActivity().getApplicationContext(), "Kaydedildi!", Toast.LENGTH_SHORT).show();
-
-                                if(workRequest!=null){
-                                    WorkManager.getInstance(requireActivity()).cancelAllWork();
-                                }
-
-                                Calendar calendar = Calendar.getInstance();
-                                calendar.set(Calendar.HOUR_OF_DAY, 22);
-                                calendar.set(Calendar.MINUTE, 0);
-                                calendar.set(Calendar.SECOND, 0);
 
                                 long currentTime = System.currentTimeMillis();
 
@@ -187,8 +184,6 @@ public class ListPageFragment extends Fragment {
                             else{
                                 Toast.makeText(getActivity().getApplicationContext(), "Hedef, 25 Karakterden Büyük Olamaz!", Toast.LENGTH_SHORT).show();
                             }
-
-
                         }
                     }
                 });
@@ -294,7 +289,7 @@ public class ListPageFragment extends Fragment {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    NavDirections action = ListPageFragmentDirections.actionListPageFragmentToFirstFragment();
+                    NavDirections action = ListPageFragmentDirections.actionListPageFragmentToSecondFragment();
                     Navigation.findNavController(view).navigate(action);
 
                 }

@@ -28,7 +28,6 @@ public class PushNotification extends Worker { //bu sınıf bizim notification'�
         //Data data = getInputData(); //diğer class'lardan veya fragmentlardan?? veri almayı böyle yapabiliriz. Bize bir veri verilecek, onu al demek.
         //int workerIcinGelenDegeriAl=data.getInt("intKey",0); //intkey anahtarkelimeli diğer classlardan gelen değeri al, yoksa sıfır olarak al. bu gelen değeri de burada kullanabiliriz
 
-
         makeNotification();
 
         return Result.success();
@@ -40,11 +39,12 @@ public class PushNotification extends Worker { //bu sınıf bizim notification'�
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context,chanelID);
 
-        builder.setSmallIcon(R.drawable.zincirfoto)
+        builder.setSmallIcon(R.drawable.chainyeni)
+                .setColor(Color.WHITE)
                 .setContentTitle("Zinciri Kırma")
-                .setContentText("Hey! Zincirini Tamamlamana Son 2 Saat!")
+                .setContentText("Hey! Zincirini Unutma!")
                 .setAutoCancel(true)
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+                .setPriority(NotificationCompat.PRIORITY_HIGH);
 
         Intent intent = new Intent(context,StartingPage.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -60,8 +60,8 @@ public class PushNotification extends Worker { //bu sınıf bizim notification'�
             NotificationChannel notificationChannel = notificationManager.getNotificationChannel(chanelID);
             if(notificationChannel==null){
                 int importance = NotificationManager.IMPORTANCE_HIGH;
-                notificationChannel = new NotificationChannel(chanelID,"some description", importance);
-                notificationChannel.setLightColor(Color.GREEN);
+                notificationChannel = new NotificationChannel(chanelID,"Zincirini Tamamla", importance);
+                notificationChannel.setLightColor(Color.BLACK);
                 notificationChannel.enableVibration(true);
                 notificationManager.createNotificationChannel(notificationChannel);
             }

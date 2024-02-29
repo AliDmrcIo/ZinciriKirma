@@ -63,7 +63,7 @@ public class SecondFragment extends Fragment {
     long aLong;
     int a,b;
     Cursor cursor,cursor2;
-    private AdView mAdView;
+
     private InterstitialAd mInterstitialAd;
     private static final String TAG = "FirstFragment";
     AdRequest adRequest;
@@ -99,9 +99,7 @@ public class SecondFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-        mAdView = binding.adView;
         AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
         InterstitialAd.load(requireActivity(),"ca-app-pub-1289222653932331/8524665691", adRequest,
                 new InterstitialAdLoadCallback() {

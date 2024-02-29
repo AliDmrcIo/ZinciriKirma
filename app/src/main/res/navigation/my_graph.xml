@@ -51,6 +51,9 @@
         <action
             android:id="@+id/action_secondFragment_to_listPage"
             app:destination="@id/listPage" />
+        <action
+            android:id="@+id/action_secondFragment_to_listPageFragment"
+            app:destination="@id/listPageFragment" />
 
     </fragment>
 
@@ -100,6 +103,9 @@
         <action
             android:id="@+id/action_listPageFragment_to_listPage"
             app:destination="@id/listPage" />
+        <action
+            android:id="@+id/action_listPageFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
