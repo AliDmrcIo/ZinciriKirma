@@ -20,20 +20,20 @@ Bu proje içerisinde kullandığım teknolojiler:
 
 •Fragment
 
+•WorkManager
+
 •RecyclerView
 
 •SqLite
 
-•Adobe Xd ile UI/UX
+•ViewModel
 
 •ViewBinding
 
 •Runnable/Handler
 
-•ViewModel
-
 •MaterialCalendarView
 
 •Decorator
 
-•WorkManager
+•Adobe Xd ile UI/UX
