@@ -2,6 +2,7 @@ package com.alidemirci.dontbreakthechain;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
@@ -60,6 +61,7 @@ public class SecondFragment extends Fragment {
     String formattedDate1,formattedDate2,formattedDate3;
     RangeDecorator rangeDecorator1,rangeDecorator2,rangeDecorator3,rangeDecorator4;
     SQLiteDatabase database2;
+    SharedPreferences sharedPreferences,sharedPreferences2,sharedPreferences3;
     long aLong;
     int a,b;
     Cursor cursor,cursor2;
@@ -67,6 +69,7 @@ public class SecondFragment extends Fragment {
     private InterstitialAd mInterstitialAd;
     private static final String TAG = "FirstFragment";
     AdRequest adRequest;
+    String s;
 
 
     @Override
@@ -77,6 +80,10 @@ public class SecondFragment extends Fragment {
         pageViewModel3 = new ViewModelProvider(requireActivity()).get(PageViewModel3.class);
         pageViewModel4 = new ViewModelProvider(requireActivity()).get(PageViewModel4.class);
 
+        sharedPreferences = requireActivity().getPreferences(Context.MODE_PRIVATE);
+        sharedPreferences2 = requireActivity().getPreferences(Context.MODE_PRIVATE);
+        sharedPreferences3 = requireActivity().getPreferences(Context.MODE_PRIVATE);
+
         try{
             database2 = requireContext().openOrCreateDatabase("myseconddatabase", Context.MODE_PRIVATE, null);
             database2.execSQL("CREATE TABLE IF NOT EXISTS myseconddatabase(aLong INTEGER, formattedDate1 VARCHAR, formattedDate2 VARCHAR, color INTEGER)");
@@ -86,7 +93,6 @@ public class SecondFragment extends Fragment {
         }
 
         adRequest = new AdRequest.Builder().build(); //interstitial reklamı burada göstermek için yükleme yaptım
-
     }
 
     @Override
@@ -144,16 +150,37 @@ public class SecondFragment extends Fragment {
 
         selectedDate = Calendar.getInstance();
 
-        long aLong=ListPageFragment.longYolla; //bu aslında pageViewModel4 yerine'te ki aLong kullandığımda herşeyin mahvolduğu senaryonun çözümü
-        String s=ListPageFragment.stringYolla; //bu da pageViewModel3 kullanmak yerine kullandığım ve basit bir şeyilde hayvan gibi sorunu çözen bir şey
+        long aLong2=ListPageFragment.longYolla; //bu aslında pageViewModel4 yerine'te ki aLong kullandığımda herşeyin mahvolduğu senaryonun çözümü
+        String s2=ListPageFragment.stringYolla; //bu da pageViewModel3 kullanmak yerine kullandığım ve basit bir şeyilde hayvan gibi sorunu çözen bir şey
 
+        if(s2!=null){
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putLong("longYolla", aLong2);
+            editor.apply();
+
+            SharedPreferences.Editor editor2 = sharedPreferences2.edit();
+            editor2.putString("stringYolla", s2);
+            editor2.apply();
+        }
+
+        aLong=sharedPreferences.getLong("longYolla", aLong);
+        s=sharedPreferences2.getString("stringYolla",s);
+        System.out.println("aLong: "+aLong);
+        System.out.println("S stringi: "+s);
 
                 pageViewModel2.getName().observe(requireActivity(), new Observer<String>() {
                     @Override
-                    public void onChanged(String s) {
-                        textView.setText("Zincir Takvimi"+"\n-- "+s+" --");
+                    public void onChanged(String s3) {
+                        SharedPreferences.Editor editor3 = sharedPreferences3.edit();
+                        editor3.putString("zincirTakvimiStringiYolla", s3);
+                        editor3.apply();
+
+
                     }
                 });
+        String s4=sharedPreferences3.getString("zincirTakvimiStringiYolla","?");
+
+        textView.setText("Zincir Takvimi"+"\n-- "+s4+" --");
 
 
             if(s!=null){
