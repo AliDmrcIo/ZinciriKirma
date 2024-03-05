@@ -174,8 +174,6 @@ public class SecondFragment extends Fragment {
                         SharedPreferences.Editor editor3 = sharedPreferences3.edit();
                         editor3.putString("zincirTakvimiStringiYolla", s3);
                         editor3.apply();
-
-
                     }
                 });
         String s4=sharedPreferences3.getString("zincirTakvimiStringiYolla","?");
@@ -440,37 +438,33 @@ public class SecondFragment extends Fragment {
                 month=date.getMonth();
                 year=date.getYear();
 
-                pageViewModel3.getName().observe(requireActivity(), new Observer<String>() {
-                    @Override
-                    public void onChanged(String s) {
-                        pageViewModelCalendarDay2 = parseStringToCalendarDay(s);
-                        Calendar conversion2=convertCalendarDayToCalendar(date);
-                        Calendar conversion=convertCalendarDayToCalendar(pageViewModelCalendarDay2);
+                pageViewModelCalendarDay2 = parseStringToCalendarDay(s);
+                Calendar conversion2=convertCalendarDayToCalendar(date);
+                Calendar conversion=convertCalendarDayToCalendar(pageViewModelCalendarDay2);
 
-                        //Bu selectedDatelere pageViewModel'dan gelen s stringini ver
-                        if(conversion2.compareTo(conversion)>=0 && conversion2.compareTo(anan)<=0){
+                //Bu selectedDatelere pageViewModel'dan gelen s stringini ver
+                if(conversion2.compareTo(conversion)>=0 && conversion2.compareTo(anan)<=0){
 
-                            buttonTamamlandi.setEnabled(true);
-                            buttonTamamlanmadi.setEnabled(true);
+                    buttonTamamlandi.setEnabled(true);
+                    buttonTamamlanmadi.setEnabled(true);
 
-                            selectedCalendar = Calendar.getInstance();
-                            selectedCalendar.set(year, month - 1, day);
+                    selectedCalendar = Calendar.getInstance();
+                    selectedCalendar.set(year, month - 1, day);
 
-                            selectorsCalendarDay = CalendarDay.from( //Kullanıcının takvim'de selector ile seçtiği gün
-                                    selectedCalendar.get(Calendar.YEAR),
-                                    selectedCalendar.get(Calendar.MONTH) + 1,
-                                    selectedCalendar.get(Calendar.DAY_OF_MONTH));
+                    selectorsCalendarDay = CalendarDay.from( //Kullanıcının takvim'de selector ile seçtiği gün
+                            selectedCalendar.get(Calendar.YEAR),
+                            selectedCalendar.get(Calendar.MONTH) + 1,
+                            selectedCalendar.get(Calendar.DAY_OF_MONTH));
 
 
-                            formattedDate2=formatDate(selectorsCalendarDay);
+                    formattedDate2=formatDate(selectorsCalendarDay);
 
-                            //Bu selectedDatelere pageViewModel'dan gelen s stringini ver
-                        }else {
-                            buttonTamamlandi.setEnabled(false);
-                            buttonTamamlanmadi.setEnabled(false);
-                        }
-                    }
-                });
+                    //Bu selectedDatelere pageViewModel'dan gelen s stringini ver
+                }else {
+                    buttonTamamlandi.setEnabled(false);
+                    buttonTamamlanmadi.setEnabled(false);
+                }
+
             }
         });
     }
