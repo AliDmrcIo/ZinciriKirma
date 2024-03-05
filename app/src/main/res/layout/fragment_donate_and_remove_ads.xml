@@ -100,7 +100,7 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="12dp"
         android:src="@drawable/donate"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,6 +122,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="1.0" />
 
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
@@ -130,11 +131,9 @@
         android:src="@drawable/donateiki"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintVertical_bias="0.072" />
 
     <EditText
         android:id="@+id/editText"
@@ -151,20 +150,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="306dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#000000"
-        android:text="Reklamları Kaldır"
-        android:textSize="24sp"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.216" />
+
 
     <Button
         android:id="@+id/button4"

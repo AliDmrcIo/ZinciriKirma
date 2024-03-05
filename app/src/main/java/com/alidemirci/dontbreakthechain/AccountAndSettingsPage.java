@@ -64,8 +64,8 @@ public class AccountAndSettingsPage extends Fragment {
     FloatingActionButton floatingActionButton1,floatingActionButton2,floatingActionButton3,floatingActionButton4;
     Button button1,button2;
     int id=1;
-    ImageView imageView1,imageView2;
-    TextView textView;
+    ImageView imageView1,imageView2,imageView3;
+    TextView textView,textView2;
     Bitmap selectedImage;
     SQLiteDatabase database;
     ActivityResultLauncher<Intent> activityResultLauncher; //Galeriye gitmek için
@@ -107,8 +107,10 @@ public class AccountAndSettingsPage extends Fragment {
 
         imageView1=binding.imageViewSelectPhoto;
         imageView2=binding.imageView15;
+        imageView3=binding.imageView14;
 
         textView=binding.textViewMagaza;
+        textView2=binding.textViewPuanVer;
 
         Cursor cursor = database.rawQuery("SELECT * FROM photos",null);
 
@@ -178,6 +180,13 @@ public class AccountAndSettingsPage extends Fragment {
             }
         });
 
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToUrl("https://play.google.com/store/apps/details?id=com.alidemirci.dontbreakthechain");
+            }
+        });
+
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -185,6 +194,19 @@ public class AccountAndSettingsPage extends Fragment {
             }
         });
 
+        textView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToUrl("https://play.google.com/store/apps/details?id=com.alidemirci.dontbreakthechain");
+            }
+        });
+
+    }
+
+    private void goToUrl (String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(launchBrowser);
     }
 
     public Bitmap makeSmallerImage(Bitmap image123,int maximumSize){ //sqlite'a 1mb'tan büyük fotolar kaydedemediğimizden dolayı resmi küçültme metodu yazdık ve boyutunu küçülttük
