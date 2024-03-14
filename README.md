@@ -1,6 +1,6 @@
-Google Play'de onay sürecinde olan Zinciri Kırma Alışkanlık Takibi uygulamamın detayları. 
+Google Play'de olan Zinciri Kırma Alışkanlık Takibi uygulamamın detayları. 
 
-Uygulama Apksına bu linkten ulaşabilir ve indirebilirsiniz: https://drive.google.com/drive/folders/1C3AQi0N-wjNDeZ9rmSWgHPJ0pqmbpeag
+Uygulamanın Google Play linkine buradan ulaşabilirsiniz: https://play.google.com/store/apps/details?id=com.alidemirci.dontbreakthechain
 
 İşte uygulama görselleri ve kullanım şekli:
 
