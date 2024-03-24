@@ -1,4 +1,4 @@
-The details of my Do Not Break The Chain Habit Tracker app available on Google Play Store are as follows. 
+The details of my "Do Not Break The Chain" or as its Turkish name "Zinciri Kırma Alışkanlık Takibi" Habit Tracker app available on Google Play Store are as follows. 
 
 You can access its Google Play link here: https://play.google.com/store/apps/details?id=com.alidemirci.dontbreakthechain
 
