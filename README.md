@@ -1,8 +1,12 @@
-Google Play'de olan Zinciri Kırma Alışkanlık Takibi uygulamamın detayları. 
+The details of my Do Not Break The Chain Habit Tracker app available on Google Play Store are as follows. 
 
-Uygulamanın Google Play linkine buradan ulaşabilirsiniz: https://play.google.com/store/apps/details?id=com.alidemirci.dontbreakthechain
+You can access its Google Play link here: https://play.google.com/store/apps/details?id=com.alidemirci.dontbreakthechain
 
-İşte uygulama görselleri ve kullanım şekli:
+Here are the application visuals and usage instructions:
+
+<img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/6debe697-6873-4b51-811c-6bfe3a98a528" alt="image1" width="250" height="500">
+
+
 
 <img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/cf403c50-21d2-4bd9-88fa-2b7e9b296e9a" alt="image8" width="250" height="500">
 <img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/2c128974-aced-4a0c-81b2-9a4f644a2f49" alt="image2" width="250" height="500">
