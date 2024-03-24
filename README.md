@@ -35,4 +35,4 @@ Here are the technologies that I used in this project:
 
 •Decorator
 
-•Adobe Xd ile UI/UX
+•UI/UX with Adobe Xd 
