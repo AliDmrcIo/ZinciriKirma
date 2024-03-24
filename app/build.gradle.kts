@@ -12,8 +12,8 @@ android {
         applicationId = "com.alidemirci.dontbreakthechain"
         minSdk = 24
         targetSdk = 34
-        versionCode = 6 //burayı google sürüme atarken sorun çıktığından yaptım
-        versionName = "6"
+        versionCode = 7 //burayı google sürüme atarken sorun çıktığından yaptım
+        versionName = "7"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -41,8 +41,8 @@ public class PushNotification extends Worker { //bu sınıf bizim notification'�
 
         builder.setSmallIcon(R.drawable.chainyeni)
                 .setColor(Color.WHITE)
-                .setContentTitle("Zinciri Kırma")
-                .setContentText("Hey! Zincirini Unutma!")
+                .setContentTitle(context.getString(R.string.zinciri_kirma))
+                .setContentText(context.getString(R.string.bildirim))
                 .setAutoCancel(true)
                 .setPriority(NotificationCompat.PRIORITY_HIGH);
 

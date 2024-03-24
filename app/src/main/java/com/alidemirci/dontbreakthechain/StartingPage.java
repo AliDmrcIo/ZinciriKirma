@@ -13,11 +13,9 @@ import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
 public class StartingPage extends AppCompatActivity {
-
     CountDownTimer countDownTimer;
     private static final String PREFS_NAME = "MyPrefsFile";
     private static final String FIRST_RUN_KEY = "firstRun";
-    PeriodicWorkRequest workRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,32 +32,12 @@ public class StartingPage extends AppCompatActivity {
                 }
                 @Override
                 public void onFinish() {
-                    Calendar calendar = Calendar.getInstance();
-                    calendar.set(Calendar.HOUR_OF_DAY, 22);
-                    calendar.set(Calendar.MINUTE, 0);
-                    calendar.set(Calendar.SECOND, 0);
-
-                    long currentTime = System.currentTimeMillis();
-
-                    // Şu anki zamanı baz alarak initialDelay'i belirleme
-                    long initialDelay = calendar.getTimeInMillis() - currentTime;
-
-                    workRequest = new PeriodicWorkRequest.Builder(
-                            PushNotification.class,
-                            24,
-                            TimeUnit.HOURS
-                    )
-                            .setInitialDelay(initialDelay, TimeUnit.MILLISECONDS)
-                            .build();
-
-                    WorkManager.getInstance(StartingPage.this).enqueue(workRequest);
                     Intent intent=new Intent(StartingPage.this,ReadMePage.class);
                     startActivity(intent);
                     finish();
                 }
             }.start();
 
-            // İlk açılış işlemleri tamamlandığında durumu güncelle
             SharedPreferences.Editor editor = settings.edit();
             editor.putBoolean(FIRST_RUN_KEY, false);
             editor.apply();

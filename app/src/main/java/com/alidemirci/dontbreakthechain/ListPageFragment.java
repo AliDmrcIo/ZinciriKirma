@@ -67,6 +67,7 @@ public class ListPageFragment extends Fragment {
     private InterstitialAd mInterstitialAd;
     private static final String TAG = "FirstFragment";
     AdRequest adRequest;
+    PeriodicWorkRequest workRequest;
 
 
     @Override
@@ -154,6 +155,26 @@ public class ListPageFragment extends Fragment {
                             if(hedef.length()<=25){
                                 save(view);
                                 Toast.makeText(getActivity().getApplicationContext(), getString(R.string.kaydedildi), Toast.LENGTH_SHORT).show();
+
+                                Calendar calendar = Calendar.getInstance();
+                                calendar.set(Calendar.HOUR_OF_DAY, 22);
+                                calendar.set(Calendar.MINUTE, 0);
+                                calendar.set(Calendar.SECOND, 0);
+
+                                long currentTime = System.currentTimeMillis();
+
+                                // Şu anki zamanı baz alarak initialDelay'i belirleme
+                                long initialDelay = calendar.getTimeInMillis() - currentTime;
+
+                                workRequest = new PeriodicWorkRequest.Builder(
+                                        PushNotification.class,
+                                        24,
+                                        TimeUnit.HOURS
+                                )
+                                        .setInitialDelay(initialDelay, TimeUnit.MILLISECONDS)
+                                        .build();
+
+                                WorkManager.getInstance(requireActivity()).enqueue(workRequest);
 
                                 if (mInterstitialAd != null) {
                                     mInterstitialAd.show(requireActivity());
@@ -367,7 +388,7 @@ public class ListPageFragment extends Fragment {
                 stringYolla=startDateString;
                 pageViewModel3.setName(startDateString);//buradan takvime tarihi yolla ve orada veritipini değiştirip o günü maviyye boya
 
-                myTextView.setText("Geçen Gün: " + days);
+                myTextView.setText(getString(R.string.gecen_gun)+" " + days);
             }
             cursor.close();
         } catch (Exception e) {
