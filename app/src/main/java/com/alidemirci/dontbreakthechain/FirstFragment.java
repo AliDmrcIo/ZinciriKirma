@@ -70,10 +70,10 @@ public class FirstFragment extends Fragment {
         sharedPreferences4 = requireActivity().getPreferences(Context.MODE_PRIVATE);
 
 
-        sDegiskeni = sharedPreferences.getString("syiAl", "Eklenen Hedefi Girin!");
+        sDegiskeni = sharedPreferences.getString("syiAl", "?");
         deger1 = sharedPreferences2.getLong("longuAl", 0);
         deger2 = sharedPreferences3.getLong("longuAl2", 0);
-        degeriAlStringIcin = sharedPreferences4.getString("guzelSoz","\"Büyük sonuçlar, küçük sürekli çabaların birikimidir.\"");
+        degeriAlStringIcin = sharedPreferences4.getString("guzelSoz",getString(R.string.sentence));
 
     }
 
@@ -93,31 +93,31 @@ public class FirstFragment extends Fragment {
         textVieww5=binding.textView2;
 
         String[] goodSentences = new String[25];
-        goodSentences[0]=("\"Taşı delen suyun kuvveti değil, damlaların sürekliliğidir.\"");
-        goodSentences[1]=("\"Büyük sonuçlar, küçük sürekli çabaların birikimidir.\"");
-        goodSentences[2]=("\"Bir işe başlamak kolaydır; devam etmek ise çok zordur.\"");
-        goodSentences[3]=("\"Yalnızca devam ve kararlılık her şeyi yapabilecek güce sahiptir.\"");
-        goodSentences[4]=("\"İnsan sahip olduklarının toplamı değil, fakat henüz gerçekleştiremediklerinin toplamıdır.\"");
-        goodSentences[5]=("\"Başarı bir yolculuktur, bir varış noktası değil.\"");
-        goodSentences[6]=("\"Baş+arı: “Baş” olmak için “arı” gibi çalışmak gerekir.\"");
-        goodSentences[7]=("\"Devamlılık, sadece bir rutini sürdürmek değil, aynı zamanda bu rutini anlamaktır.\"");
-        goodSentences[8]=("\"Başarı, sürekli çaba ve azimle yakalanır.\"");
-        goodSentences[9]=("\"Ne başarı bir sondur, ne de kaybetmek ölümcül; önemli olan devam etme cesaretidir.\"");
-        goodSentences[10]=("\"Başarının yolu, konuşmayı bırakmak ve yapmaya başlamaktır.\"");
-        goodSentences[11]=("\"Devler gibi eseler bırakmak için, karıncalar gibi çalışmak lazım.\"");
-        goodSentences[12]=("\"Bahane değil, çare bulun.\"");
-        goodSentences[13]=("\"Aradığını bilmeyen, bulduğunu anlayamaz.\"");
-        goodSentences[14]=("\"Ders alınmış başarısızlık başarı demektir.\"");
-        goodSentences[15]=("\"Fırsatlar durup dururken karşınıza çıkmaz, onları siz yaratırsınız.\"");
-        goodSentences[16]=("\"Hiçbir şeyden vazgeçme, çünkü sadece kaybedenler vazgeçer.\"");
-        goodSentences[17]=("\"Bundan bir yıl sonra, bugün başlamış olmayı dileyeceksin.\"");
-        goodSentences[18]=("\"Durmadan devam ettiğin sürece, ne kadar yavaş gittiğinin bir önemi yoktur.\"");
-        goodSentences[19]=("\"Kaybetmekten yılmayan, kazanmanın eşiğindedir.\"");
-        goodSentences[20]=("\"Hiçbir zaman vazgeçmeyen bir insanı yenmek çok zordur.\"");
-        goodSentences[21]=("\"Dünya, vazgeçenleri değil, azmedenleri hatırlar.\"");
-        goodSentences[22]=("\"Gökkuşağına ulaşmak istiyorsan yağmura katlanmak zorundasın.\"");
-        goodSentences[23]=("\"Eğer ortasında vazgeçerseniz, sonunu asla göremezsiniz.\"");
-        goodSentences[24]=("\"Yarışı kazananlar, daima yavaş ve devamlı gidenlerdir.\"");
+        goodSentences[0]=(getString(R.string.first_sentence));
+        goodSentences[1]=(getString(R.string.second_sentence));
+        goodSentences[2]=(getString(R.string.third_sentence));
+        goodSentences[3]=(getString(R.string.fourth_sentence));
+        goodSentences[4]=(getString(R.string.fifth_sentence));
+        goodSentences[5]=(getString(R.string.sixth_sentence));
+        goodSentences[6]=(getString(R.string.seventh_sentence));
+        goodSentences[7]=(getString(R.string.eight_sentence));
+        goodSentences[8]=(getString(R.string.nineth_sentence));
+        goodSentences[9]=(getString(R.string.tenth_sentence));
+        goodSentences[10]=(getString(R.string.eleventh_sentence));
+        goodSentences[11]=(getString(R.string.tewelveth_sentence));
+        goodSentences[12]=(getString(R.string.therteenth_sentence));
+        goodSentences[13]=(getString(R.string.fourtheenth_sentence));
+        goodSentences[14]=(getString(R.string.fifteenth_sentence));
+        goodSentences[15]=(getString(R.string.sixteenth_sentence));
+        goodSentences[16]=(getString(R.string.seventeenth_sentence));
+        goodSentences[17]=(getString(R.string.eighteenth_sentence));
+        goodSentences[18]=(getString(R.string.nineteenth_sentence));
+        goodSentences[19]=(getString(R.string.twentyth_sentence));
+        goodSentences[20]=(getString(R.string.twentyoneth_sentence));
+        goodSentences[21]=(getString(R.string.twentytwoth_sentence));
+        goodSentences[22]=(getString(R.string.twentythreeth_sentence));
+        goodSentences[23]=(getString(R.string.twentytfourth_sentence));
+        goodSentences[24]=(getString(R.string.twentyfiftyth_sentence));
 
         textVieww5.setOnClickListener(new View.OnClickListener() {
             @Override

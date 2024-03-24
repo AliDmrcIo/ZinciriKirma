@@ -107,7 +107,7 @@ public class SecondFragment extends Fragment {
 
         AdRequest adRequest = new AdRequest.Builder().build();
 
-        InterstitialAd.load(requireActivity(),"ca-app-pub-1289222653932331/8524665691", adRequest,
+        InterstitialAd.load(requireActivity(),"ca-app-pub-1289222653932331/6610468707", adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override
                     public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
@@ -178,7 +178,7 @@ public class SecondFragment extends Fragment {
                 });
         String s4=sharedPreferences3.getString("zincirTakvimiStringiYolla","?");
 
-        textView.setText("Zincir Takvimi"+"\n-- "+s4+" --");
+        textView.setText(getString(R.string.zincir_takvimi)+"\n-- "+s4+" --");
 
 
             if(s!=null){
@@ -262,7 +262,7 @@ public class SecondFragment extends Fragment {
                             rangeDecorator1 = new RangeDecorator(yesil, selectorsCalendarDay, selectorsCalendarDay);
                             butonlarIcin(view);
                             calendarView.addDecorator(rangeDecorator1);
-                            Toast.makeText(getActivity().getApplicationContext(), "Tebrikler!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity().getApplicationContext(), getString(R.string.tebrik), Toast.LENGTH_SHORT).show();
                             playVictorySound();
 
 
@@ -277,7 +277,7 @@ public class SecondFragment extends Fragment {
                             // Hiçbir gün seçilmedi, ilk günü güncelle
                             rangeDecorator2 = new RangeDecorator(yesil, firstCalendarDay, firstCalendarDay);
                             calendarView.addDecorator(rangeDecorator2);
-                            Toast.makeText(getActivity().getApplicationContext(), "Tebrikler!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity().getApplicationContext(), getString(R.string.tebrik), Toast.LENGTH_SHORT).show();
                             playVictorySound();
 
                             try {

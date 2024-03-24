@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageViewEmail"
+        android:id="@+id/imageViewwwwwww"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -30,17 +30,16 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/editTexto"
         style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
         android:layout_width="295dp"
         android:layout_height="52dp"
-        android:hint="Email: "
         android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewEmail"
-        app:layout_constraintEnd_toEndOf="@+id/imageViewEmail"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewwwwwww"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewwwwwww"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageViewEmail"
-        app:layout_constraintTop_toTopOf="@+id/imageViewEmail"
+        app:layout_constraintStart_toStartOf="@+id/imageViewwwwwww"
+        app:layout_constraintTop_toTopOf="@+id/imageViewwwwwww"
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
@@ -52,14 +51,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editTexto" />
 
     <EditText
         android:id="@+id/editTextPassword"
         style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
         android:layout_width="295dp"
         android:layout_height="52dp"
-        android:hint="Şifre: "
         android:inputType="text"
         android:password="true"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewPassword"
@@ -77,7 +75,7 @@
         android:layout_marginTop="12dp"
         android:backgroundTint="#000000"
         android:textColor="#FFFFFF"
-        android:text="Çok Yakında..."
+        android:text="@string/cokyakinda2"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -90,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#000000"
-        android:text="Çok Yakında..."
+        android:text="@string/cokyakinda3"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"

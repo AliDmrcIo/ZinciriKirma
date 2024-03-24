@@ -64,11 +64,10 @@ public class ListPageFragment extends Fragment {
     long id2;
     public static long longYolla;
     public static String stringYolla;
-    PeriodicWorkRequest workRequest;
     private InterstitialAd mInterstitialAd;
     private static final String TAG = "FirstFragment";
     AdRequest adRequest;
-    Calendar calendar;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -102,7 +101,7 @@ public class ListPageFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        InterstitialAd.load(requireActivity(),"ca-app-pub-1289222653932331/8524665691", adRequest,
+        InterstitialAd.load(requireActivity(),"ca-app-pub-1289222653932331/6610468707", adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override
                     public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
@@ -135,10 +134,7 @@ public class ListPageFragment extends Fragment {
         arguments = getArguments();
         System.out.println("listadapter'dan listpagefragment'a veri geldi");
 
-        calendar = Calendar.getInstance();
-        calendar.set(Calendar.HOUR_OF_DAY, 22);
-        calendar.set(Calendar.MINUTE, 0);
-        calendar.set(Calendar.SECOND, 0);
+
 
         if (arguments != null) {
             info = arguments.getString("info");
@@ -153,27 +149,11 @@ public class ListPageFragment extends Fragment {
                         rutin = editText2.getText().toString();
 
                         if (hedef.isEmpty() || rutin.isEmpty()) {
-                            Toast.makeText(getActivity().getApplicationContext(), "Hedef ve Rutin Boş Kalamaz!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity().getApplicationContext(), getString(R.string.hedef_rutin), Toast.LENGTH_SHORT).show();
                         } else {
                             if(hedef.length()<=25){
                                 save(view);
-                                Toast.makeText(getActivity().getApplicationContext(), "Kaydedildi!", Toast.LENGTH_SHORT).show();
-
-                                long currentTime = System.currentTimeMillis();
-
-                                // Şu anki zamanı baz alarak initialDelay'i belirleme
-                                long initialDelay = calendar.getTimeInMillis() - currentTime;
-
-                                workRequest = new PeriodicWorkRequest.Builder(
-                                        PushNotification.class,
-                                        24,
-                                        TimeUnit.HOURS
-                                )
-                                        .setInitialDelay(initialDelay, TimeUnit.MILLISECONDS)
-                                        .build();
-
-                                WorkManager.getInstance(requireActivity()).enqueue(workRequest);
-
+                                Toast.makeText(getActivity().getApplicationContext(), getString(R.string.kaydedildi), Toast.LENGTH_SHORT).show();
 
                                 if (mInterstitialAd != null) {
                                     mInterstitialAd.show(requireActivity());
@@ -182,7 +162,7 @@ public class ListPageFragment extends Fragment {
                                 }
                             }
                             else{
-                                Toast.makeText(getActivity().getApplicationContext(), "Hedef, 25 Karakterden Büyük Olamaz!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity().getApplicationContext(), getString(R.string.karakter), Toast.LENGTH_SHORT).show();
                             }
                         }
                     }
@@ -220,11 +200,11 @@ public class ListPageFragment extends Fragment {
                                 rutin = editText2.getText().toString();
 
                                 if (hedef.isEmpty() || rutin.isEmpty()) {
-                                    Toast.makeText(getActivity().getApplicationContext(), "Hedef ve Rutin Boş Kalamaz!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getActivity().getApplicationContext(), getString(R.string.hedef_rutin), Toast.LENGTH_SHORT).show();
                                 } else {
                                     if(hedef.length()<=25){
                                         save(view);
-                                        Toast.makeText(getActivity().getApplicationContext(), "Kaydedildi!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getActivity().getApplicationContext(), getString(R.string.kaydedildi), Toast.LENGTH_SHORT).show();
 
                                         if (mInterstitialAd != null) {
                                             mInterstitialAd.show(requireActivity());
@@ -233,7 +213,7 @@ public class ListPageFragment extends Fragment {
                                         }
                                     }
                                     else{
-                                        Toast.makeText(getActivity().getApplicationContext(), "Hedef, 25 Karakterden Büyük Olamaz!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getActivity().getApplicationContext(), getString(R.string.karakter), Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             }
@@ -273,14 +253,14 @@ public class ListPageFragment extends Fragment {
                                 rutin = editText2.getText().toString();
 
                                 if (hedef.isEmpty() || rutin.isEmpty()) {
-                                    Toast.makeText(getActivity().getApplicationContext(), "Hedef ve Rutin Boş Kalamaz!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getActivity().getApplicationContext(), getString(R.string.hedef_rutin), Toast.LENGTH_SHORT).show();
                                 } else {
                                     if(hedef.length()<=25){
                                         save(view);
-                                        Toast.makeText(getActivity().getApplicationContext(), "Kaydedildi!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getActivity().getApplicationContext(), getString(R.string.kaydedildi), Toast.LENGTH_SHORT).show();
                                     }
                                     else{
-                                        Toast.makeText(getActivity().getApplicationContext(), "Hedef, 25 Karakterden Büyük Olamaz!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getActivity().getApplicationContext(), getString(R.string.karakter), Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             }
@@ -305,10 +285,10 @@ public class ListPageFragment extends Fragment {
                 rutin = editText2.getText().toString();
 
                 if (hedef.isEmpty() || rutin.isEmpty()) {
-                    Toast.makeText(getActivity().getApplicationContext(), "Hedef ve Rutin Boş Kalamaz!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplicationContext(), getString(R.string.hedef_rutin), Toast.LENGTH_SHORT).show();
                 } else {
                     delete(view);
-                    Toast.makeText(getActivity().getApplicationContext(), "Silindi!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplicationContext(), getString(R.string.silindi), Toast.LENGTH_SHORT).show();
 
                     if (mInterstitialAd != null) {
                         mInterstitialAd.show(requireActivity());

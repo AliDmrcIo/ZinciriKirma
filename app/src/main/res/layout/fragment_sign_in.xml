@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/alfa_slab_one"
             android:gravity="center"
-            android:text="Zinciri Kırma"
+            android:text="@string/zinciri_kirma2"
             android:textColor="#FFFFFF"
             android:textSize="40sp" />
 
@@ -53,7 +53,6 @@
         android:background="@drawable/box"
         android:ems="10"
         android:fadingEdge="vertical"
-        android:hint="Ad - Soyad"
         android:inputType="text"
         android:padding="5dp"
         app:layout_constraintEnd_toEndOf="@+id/imageViewRectangle"
@@ -62,14 +61,13 @@
         app:layout_constraintTop_toTopOf="@+id/imageViewRectangle" />
 
     <EditText
-        android:id="@+id/editTextEmailKayitOl"
+        android:id="@+id/editTextt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:background="@drawable/box"
         android:ems="10"
         android:fadingEdge="vertical"
-        android:hint="Email"
         android:inputType="text"
         android:padding="5dp"
         app:layout_constraintEnd_toEndOf="@+id/imageViewRectangle"
@@ -85,20 +83,19 @@
         android:background="@drawable/box"
         android:ems="10"
         android:fadingEdge="vertical"
-        android:hint="Şifre"
         android:inputType="text"
         android:padding="5dp"
         android:password="true"
         app:layout_constraintEnd_toEndOf="@+id/imageViewRectangle"
         app:layout_constraintStart_toStartOf="@+id/imageViewRectangle"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailKayitOl" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextt" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="306dp"
         android:layout_height="60dp"
         android:backgroundTint="#000000"
-        android:text="Çok Yakında..."
+        android:text="@string/cokyakinda1"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
