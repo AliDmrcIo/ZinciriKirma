@@ -6,7 +6,6 @@ You can access its Google Play link here: https://play.google.com/store/apps/det
 Here are the application visuals and usage instructions:
 
 <img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/6debe697-6873-4b51-811c-6bfe3a98a528" alt="image1" width="250" height="500">
-<img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/e77765d8-1500-405d-a9f7-b2a55f61eb93" alt="image9" width="200" height="500">
 <img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/cc9a4ac9-c48e-46c0-a64b-fe5cfa17a9f4" alt="image2" width="250" height="500">
 <img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/c512a3de-5cdf-4141-b367-fa1055c6ba93" alt="image3" width="250" height="500">
 <img src="https://github.com/AliDmrcIo/ZinciriKirma/assets/110434358/a292f31f-54b5-4e16-84cb-3ac8a2c4dd9b" alt="image4" width="250" height="500">
