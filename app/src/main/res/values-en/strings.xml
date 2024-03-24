@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DontBreakTheChain</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="g_n">Day</string>
+    <string name="kalan_saat">Hours Left</string>
+    <string name="zinciri_kirma">Do Not Break The Chain</string>
+    <string name="hedefe_kalan_gun">Remaining Days</string>
+    <string name="zincir_takvimi">Chain Calendar</string>
+    <string name="tebrik">Congratulations!</string>
+    <string name="sentence">Click Here!</string>
+    <string name="first_sentence">\"The strength lies not in the force of the water, but in the continuity of the drops.\"</string>
+    <string name="second_sentence">\"The great results are the accumulation of small continuous efforts.\"</string>
+    <string name="third_sentence">\"The beginning of a task is easy; continuing it is difficult.\"</string>
+    <string name="fourth_sentence">\"Only perseverance and determination have the power to accomplish everything.\"</string>
+    <string name="fifth_sentence">\"It is not the sum of what one possesses, but rather the sum of what one has yet to achieve.\"</string>
+    <string name="sixth_sentence">\"Success is a journey, not a destination.\"</string>
+    <string name="seventh_sentence">\"Success: To be successful, one must work like a bee.\"</string>
+    <string name="eight_sentence">\"Consistency is not just about maintaining a routine, but also understanding the routine.\"</string>
+    <string name="nineth_sentence">\"Success is achieved through continuous effort and perseverance.\"</string>
+    <string name="tenth_sentence">\"The path to success is to stop talking and start doing.\"</string>
+    <string name="eleventh_sentence">\"To leave behind great works, one must work like ants.\"</string>
+    <string name="tewelveth_sentence">\"Find a solution, not an excuse.\"</string>
+    <string name="therteenth_sentence">\"Those who do not know what they seek, cannot understand what they find.\"</string>
+    <string name="fourtheenth_sentence">\"Learned failure is a success.\"</string>
+    <string name="fifteenth_sentence">\"Opportunities do not just come to you, you create them.\"</string>
+    <string name="sixteenth_sentence">\"Never give up, for only losers quit.\"</string>
+    <string name="seventeenth_sentence">\"A year from now, you will wish you had started today.\"</string>
+    <string name="eighteenth_sentence">\"As long as you keep moving forward, it does not matter how slowly you go.\"</string>
+    <string name="nineteenth_sentence">\"Those who do not tire of losing are on the brink of winning.\"</string>
+    <string name="twentyth_sentence">\"It is very difficult to defeat a person who never gives up.\"</string>
+    <string name="twentyoneth_sentence">\"The world remembers those who persevere, not those who give up.\"</string>
+    <string name="twentytwoth_sentence">\"If you want to reach the rainbow, you have to endure the rain.\"</string>
+    <string name="twentythreeth_sentence">\"Human is not the sum of what he has already, but rather the sum of what he has not yet achieved.\"</string>
+    <string name="twentytfourth_sentence">\"If you give up in the middle, you will never see the end.\"</string>
+    <string name="twentyfiftyth_sentence">\"The winners of the race are always those who go slow and steady.\"</string>
+    <string name="zincir_ekleme">Add Chain</string>
+    <string name="yeni_bir_hedef_ekle">Add New Goal</string>
+    <string name="hedef_ekle">Goal:\n(For example: Drink Water)</string>
+    <string name="rutin_ekle">Routine:\n(For example: 2 Liters Per Day)</string>
+    <string name="kaydet">Save</string>
+    <string name="sil">Delete</string>
+    <string name="hedef_rutin">Goal and Routine Cannot Be Empty!</string>
+    <string name="kaydedildi">Saved!</string>
+    <string name="karakter">The Goal Cannot Be Longer Than 25 Characters!</string>
+    <string name="silindi">Deleted!</string>
+    <string name="zincirler">Chains</string>
+    <string name="hosgeldiniz">Welcome</string>
+    <string name="magaza">Store</string>
+    <string name="puan_ver">Rate</string>
+    <string name="girisyap">Sign In</string>
+    <string name="kayitol">Sign Up</string>
+    <string name="destekol">Support the App Developer!</string>
+    <string name="ode">Pay</string>
+    <string name="diger_tutar">Other Amount:</string>
+    <string name="zinciri_kirma2">Do Not Break The Chain</string>
+    <string name="cokyakinda1">Coming Soon...</string>
+    <string name="cokyakinda2">Coming Soon...</string>
+    <string name="cokyakinda3">Coming Soon...</string>
+
+    <string name="readme">Before Starting \n\nHello. First of all, you are about to start a long and challenging but life-changing process. To briefly introduce myself, I am Ali. I am the developer of this application and also a Software Engineering student at a university. \n\nEight months ago, my friend and I decided to start the Do Not Break The Chain journey. After 4-5 months passed, We started asking \"How many days has it been since we started?\". Every time we asked this question, we had to count the days since we started, which was time-consuming. So, I decided to make a very simple mobile application consisting of just one page, with only a day counter, to make our job easier. Then things developed, and now we are in this application.\n\nFirst of all, what is Do Not Break The Chain? Do Not Break The Chain is a methodology where you commit to doing a habit or achieving a goal without interruption for a specified period, typically one year. This process is naturally likened to a chain. If even one link of the chain breaks, the entire chain is considered broken. For example, my chain was to watch one mobile app development video every day. Yours could be going to the gym twice a week.\n\nRest assured, you will be truly amazed at how much progress you have made after 6 months. The point I have reached in 8 months could be a realistic example and a source of inspiration for you. Eight months ago, if someone had told me \"After 8 months, you will create a mobile application and publish it on Google Play.\", I would say \"Leave me alone you crazy\". We have already started discussing and getting excited about what our goal for next year will be with my friend. \n\nSix months, one year, and similar periods might seem very long to you, but real progress usually occurs with small steps. We often hear stories of those who quickly come into money ending up bankrupt or those who become famous quickly being forgotten just as fast on social media. Or worse, there are quite a few stories of people whose lives have become even worse due to things obtained through unnatural processes.\n\nReal success comes slowly, steadily, through a difficult and arduous path. What is portrayed to us on social media is almost entirely false. Here, patience, determination, and continuity are critical. This is a journey where as you improve yourself, your surroundings, and the world will be affected by it, just like how my mobile application will be beneficial to you right now. After all, as the poet said: \"Change yourself, let the world change. Change your world, let the world change.\"\n\nRegarding the application, create a chain/goal and select it on the main page. After selecting the chain, you can see how many days it has been since you started, how many days are left until the end of the year, and how many hours are left until the end of today on the main page. Additionally, you can visually track your progress from the digital calendar associated with your chain and get motivated (you will feel even stronger as the calendar turns green). Enter the calendar every day and approve that day is chain when you complete it. Do not worry about forgetting; I will send you a notification every day.\n\nI wish you plenty of luck and determination throughout this process.</string>
+    <string name="zinciri_kirma_name">Chain</string>
+
+</resources>
