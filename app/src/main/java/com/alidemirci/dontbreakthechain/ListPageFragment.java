@@ -156,25 +156,29 @@ public class ListPageFragment extends Fragment {
                                 save(view);
                                 Toast.makeText(getActivity().getApplicationContext(), getString(R.string.kaydedildi), Toast.LENGTH_SHORT).show();
 
-                                Calendar calendar = Calendar.getInstance();
-                                calendar.set(Calendar.HOUR_OF_DAY, 22);
-                                calendar.set(Calendar.MINUTE, 0);
-                                calendar.set(Calendar.SECOND, 0);
+                                if(workRequest!=null){
 
-                                long currentTime = System.currentTimeMillis();
+                                }else{
+                                    Calendar calendar = Calendar.getInstance();
+                                    calendar.set(Calendar.HOUR_OF_DAY, 22);
+                                    calendar.set(Calendar.MINUTE, 0);
+                                    calendar.set(Calendar.SECOND, 0);
 
-                                // Şu anki zamanı baz alarak initialDelay'i belirleme
-                                long initialDelay = calendar.getTimeInMillis() - currentTime;
+                                    long currentTime = System.currentTimeMillis();
 
-                                workRequest = new PeriodicWorkRequest.Builder(
-                                        PushNotification.class,
-                                        24,
-                                        TimeUnit.HOURS
-                                )
-                                        .setInitialDelay(initialDelay, TimeUnit.MILLISECONDS)
-                                        .build();
+                                    // Şu anki zamanı baz alarak initialDelay'i belirleme
+                                    long initialDelay = calendar.getTimeInMillis() - currentTime;
 
-                                WorkManager.getInstance(requireActivity()).enqueue(workRequest);
+                                    workRequest = new PeriodicWorkRequest.Builder(
+                                            PushNotification.class,
+                                            24,
+                                            TimeUnit.HOURS
+                                    )
+                                            .setInitialDelay(initialDelay, TimeUnit.MILLISECONDS)
+                                            .build();
+
+                                    WorkManager.getInstance(requireActivity()).enqueue(workRequest);
+                                }
 
                                 if (mInterstitialAd != null) {
                                     mInterstitialAd.show(requireActivity());
